@@ -12,6 +12,7 @@ jobs:
     script: 
     - jdk_switcher use openjdk8
     - ./gradlew test
+    - ./gradlew jacocoTestReport
   - # stage: ...
     env: JDK=9
     script: 

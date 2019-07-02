@@ -20,11 +20,11 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 import com.clubobsidian.fuzzutil.rule.StringRule;
-import com.clubobsidian.fuzzutil.rule.impl.DashesRule;
-import com.clubobsidian.fuzzutil.rule.impl.LowercaseRule;
-import com.clubobsidian.fuzzutil.rule.impl.SpaceRule;
-import com.clubobsidian.fuzzutil.rule.impl.TrimRule;
-import com.clubobsidian.fuzzutil.rule.impl.UnderscoreRule;
+import com.clubobsidian.fuzzutil.rule.string.DashesRule;
+import com.clubobsidian.fuzzutil.rule.string.LowercaseRule;
+import com.clubobsidian.fuzzutil.rule.string.SpaceRule;
+import com.clubobsidian.fuzzutil.rule.string.TrimRule;
+import com.clubobsidian.fuzzutil.rule.string.UnderscoreRule;
 
 public class RuleTest {
 

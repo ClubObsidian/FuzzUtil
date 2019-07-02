@@ -19,11 +19,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.clubobsidian.fuzzutil.rule.StringRule;
-import com.clubobsidian.fuzzutil.rule.impl.LowercaseRule;
-import com.clubobsidian.fuzzutil.rule.impl.SpaceRule;
-import com.clubobsidian.fuzzutil.rule.impl.DashesRule;
-import com.clubobsidian.fuzzutil.rule.impl.TrimRule;
-import com.clubobsidian.fuzzutil.rule.impl.UnderscoreRule;
+import com.clubobsidian.fuzzutil.rule.string.DashesRule;
+import com.clubobsidian.fuzzutil.rule.string.LowercaseRule;
+import com.clubobsidian.fuzzutil.rule.string.SpaceRule;
+import com.clubobsidian.fuzzutil.rule.string.TrimRule;
+import com.clubobsidian.fuzzutil.rule.string.UnderscoreRule;
 
 public final class StringFuzz {
 
@@ -52,5 +52,10 @@ public final class StringFuzz {
 			normalizedInput = rule.applyRule(normalizedInput);
 		}
 		return normalizedInput;
+	}
+	
+	public static boolean fuzzyEqual(final String input, final String comparison)
+	{
+		return normalize(input).equals(normalize(comparison));
 	}
 }

@@ -26,10 +26,27 @@ public class StringFuzzUtilTest {
 	private static final String TEST = "test";
 	
 	@Test
+	public void testNull()
+	{
+		String nullString = null;
+		String normalize = StringFuzz.normalize(nullString);
+		assertTrue("Normalized string is not null with a null input", normalize == null);
+	}
+	
+	@Test
 	public void testNormalize()
 	{
 		String toNormalize = "\t\n___-T-e-s-t-   -_";
 		String normalize = StringFuzz.normalize(toNormalize);
 		assertTrue("String normalize failed", normalize.equals(TEST));
+	}
+	
+	@Test
+	public void testFuzzyEqual()
+	{
+		String input = "\t\n___-T-e-s-t-   -_";
+		String comparison = "test";
+		boolean areEqual = StringFuzz.fuzzyEqual(input, comparison);
+		assertTrue("String fuzzy equal failed", areEqual);
 	}
 }

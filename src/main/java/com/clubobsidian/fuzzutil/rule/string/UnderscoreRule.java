@@ -13,15 +13,15 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 */
-package com.clubobsidian.fuzzutil.rule.impl;
+package com.clubobsidian.fuzzutil.rule.string;
 
 import com.clubobsidian.fuzzutil.rule.StringRule;
 
-public class DashesRule extends StringRule {
+public class UnderscoreRule extends StringRule {
 
 	@Override
 	public String applyRule(String input) 
 	{
-		return input.replace("-", "");
+		return input.replace("_", "");
 	}
 }

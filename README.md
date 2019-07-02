@@ -8,7 +8,7 @@
 
 A utility library for fuzzy comparisons of different object types.
 
-## Settings up as a dependency
+## Setting up as a dependency
 
 ### Gradle
 
@@ -17,7 +17,7 @@ repositories {
 	maven { url 'https://jitpack.io' }
 }
 
-compile 'com.github.ClubObsidian:FuzzUtil:1.0.0'
+compile 'com.github.ClubObsidian:FuzzUtil:1.1.0'
 ```
 
 ### Maven
@@ -33,6 +33,6 @@ compile 'com.github.ClubObsidian:FuzzUtil:1.0.0'
 <dependency>
 	<groupId>com.github.clubobsidian</groupId>
 	<artifactId>FuzzUtil</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 </dependency>
 ```
